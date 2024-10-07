@@ -10,3 +10,4 @@
 - [ ] add env variables to deployment
 - [ ] publish npm package
 - [ ] npm audit
+- [ ] versioning
