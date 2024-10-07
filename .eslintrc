@@ -1,0 +1,41 @@
+{
+    "env": {
+      "browser": true,  // For browser-based JavaScript
+      "es2021": true    // Enable modern JavaScript (ES2021)
+    },
+    "extends": ["eslint:recommended",  // Base recommended rules
+    "plugin:prettier/recommended"] , // Extend Prettier's recommended rules
+    "parserOptions": {
+      "ecmaVersion": 12,  // ECMAScript version (ES12 or 2021)
+      "sourceType": "module"  // Use 'module' if you're using ES modules (import/export)
+    },
+    "rules": {
+    
+      // Best practices
+      "eqeqeq": "error",                    // Enforce use of === and !==
+      "curly": "error",                     // Always require curly braces in control blocks (if, else, etc.)
+      "no-console": "warn",                 // Warn if console.log is used (optional, useful for production code)
+      "no-unused-vars": "warn",             // Warn if variables are declared but not used
+      "no-var": "error",                    // Disallow var, use let or const instead
+      "prefer-const": "error",              // Prefer const if variables are not reassigned
+      "no-const-assign": "error",           // Disallow reassignment of const variables
+      "no-debugger": "warn",                // Warn on debugger statements (optional for production code)
+  
+      // Code structure
+      "consistent-return": "error",         // Require return statements to be consistent
+      "no-lonely-if": "error",              // Disallow `else` following a single `if`
+      "no-nested-ternary": "error",         // Avoid complex nested ternary operators for readability
+      "no-unreachable": "error",            // Disallow unreachable code after return, throw, continue, or break
+  
+      // Function and variable handling
+      "no-shadow": "warn",                  // Warn when a variable declaration shadows a variable in the outer scope
+      "no-use-before-define": "error",      // Prevent using variables before they are defined
+      "func-style": ["error", "expression"], // Enforce function expressions rather than declarations
+      "no-param-reassign": "warn",          // Avoid reassigning function parameters (can lead to confusing code)
+  
+      // Comments
+      "spaced-comment": ["error", "always"], // Enforce space after comment tags (// or /*)
+      "no-inline-comments": "warn"          // Discourage inline comments (optional)
+    }
+  }
+  
