@@ -1,6 +1,6 @@
 {
   "name": "workflow",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "[] - add linting\r [] - add linting to pipeline\r [] - add unit tests\r [] - add unit test pipeline\r [] - add e2e tests\r [] - add e2e test pipeline",
   "main": "index.js",
   "scripts": {
@@ -21,14 +21,14 @@
   },
   "lint-staged": {
     "*.js": [
-	    "prettier --write",
-	    "eslint --fix"
-	  ],
-	  "*.html": [
-	    "prettier --write"
-	  ],
-	  "*.scss": [
-	    "prettier --write"
-	  ]
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }
