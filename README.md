@@ -1,7 +1,7 @@
 # Tasks
 
-- [ ] add linting
-- [ ] add linting to pipeline (hooks at least)
+- [x] add linting
+- [x] add linting to pipeline (hooks at least)
 - [ ] add unit tests
 - [ ] add unit test pipeline
 - [ ] add e2e tests
