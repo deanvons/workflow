@@ -1,0 +1,5 @@
+# Ignore specific test files
+cypress
+
+# Ignore node_modules
+node_modules

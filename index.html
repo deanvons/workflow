@@ -7,8 +7,27 @@
   </head>
 
   <body>
-    <h1>Deployed with a git action pipeline</h1>
-    <h2>Omg I just made this change and it will auto deploy woop woop</h2>
-    <script src="index.js" type="module"></script>
+    <h1>Basic Cypress Test Demo</h1>
+
+    <!-- Input Field -->
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" placeholder="Enter your name" />
+
+    <!-- Button to show an alert -->
+    <button id="alertBtn" onclick="showAlertMessage()">Show Alert</button>
+
+    <!-- Button to change the background color -->
+    <button id="colorBtn" onclick="changeBackgroundColor()">
+      Change Background
+    </button>
+
+    <!-- Button to toggle text -->
+    <button id="toggleBtn" onclick="toggleText()">Toggle Text</button>
+
+    <!-- Text to be toggled -->
+    <p id="toggleText">This text will be toggled.</p>
+
+    <a href="/profile.html">Go to another page</a>
+    <script src="index.js" defer></script>
   </body>
 </html>

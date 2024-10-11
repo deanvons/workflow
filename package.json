@@ -9,7 +9,10 @@
     "prepare": "husky install",
     "test": "npm run test-unit",
     "test-e2e": "cypress open",
-    "test-unit": "jest"
+    "test-unit": "jest",
+    "test-e2e-report": "cypress run --reporter mochawesome",
+	  "test-e2e-cli": "cypress run",
+    "format":"prettier *.js --write"
   },
   "author": "",
   "license": "ISC",
@@ -34,7 +37,7 @@
       "eslint --fix"
     ],
     "*.html": [
-      "prettier --check"
+      "prettier --write"
     ],
     "*.scss": [
       "prettier --write"
